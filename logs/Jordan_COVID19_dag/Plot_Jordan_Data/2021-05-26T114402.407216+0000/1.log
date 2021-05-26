@@ -1,0 +1,24 @@
+[2021-05-26 11:47:55,186] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Jordan_COVID19_dag.Plot_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [queued]>
+[2021-05-26 11:47:55,198] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Jordan_COVID19_dag.Plot_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [queued]>
+[2021-05-26 11:47:55,198] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-26 11:47:55,199] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2021-05-26 11:47:55,200] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-26 11:47:55,216] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): Plot_Jordan_Data> on 2021-05-26T11:44:02.407216+00:00
+[2021-05-26 11:47:55,220] {standard_task_runner.py:52} INFO - Started process 76 to run task
+[2021-05-26 11:47:55,224] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Jordan_COVID19_dag', 'Plot_Jordan_Data', '2021-05-26T11:44:02.407216+00:00', '--job-id', '30', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/covid_dag.py', '--cfg-path', '/tmp/tmpnpj1rhxu', '--error-file', '/tmp/tmphhkmhjkb']
+[2021-05-26 11:47:55,225] {standard_task_runner.py:77} INFO - Job 30: Subtask Plot_Jordan_Data
+[2021-05-26 11:47:55,275] {logging_mixin.py:104} INFO - Running <TaskInstance: Jordan_COVID19_dag.Plot_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [running]> on host eb9be2e0c736
+[2021-05-26 11:47:55,320] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=Jordan_COVID19_dag
+AIRFLOW_CTX_TASK_ID=Plot_Jordan_Data
+AIRFLOW_CTX_EXECUTION_DATE=2021-05-26T11:44:02.407216+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-05-26T11:44:02.407216+00:00
+[2021-05-26 11:47:55,614] {__init__.py:482} WARNING - Matplotlib created a temporary config/cache directory at /tmp/matplotlib-4p0gji_1 because the default path (/home/airflow/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2021-05-26 11:47:55,755] {font_manager.py:1423} INFO - Generating new fontManager, this may take some time...
+[2021-05-26 11:47:57,676] {python.py:118} INFO - Done. Returned value was: None
+[2021-05-26 11:47:57,691] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=Jordan_COVID19_dag, task_id=Plot_Jordan_Data, execution_date=20210526T114402, start_date=20210526T114755, end_date=20210526T114757
+[2021-05-26 11:47:57,726] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-05-26 11:47:57,776] {local_task_job.py:146} INFO - Task exited with return code 0

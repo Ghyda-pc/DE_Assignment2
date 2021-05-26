@@ -1,0 +1,22 @@
+[2021-05-26 11:47:52,907] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Jordan_COVID19_dag.Scale_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [queued]>
+[2021-05-26 11:47:52,920] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Jordan_COVID19_dag.Scale_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [queued]>
+[2021-05-26 11:47:52,921] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-26 11:47:52,921] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2021-05-26 11:47:52,922] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-26 11:47:52,936] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): Scale_Jordan_Data> on 2021-05-26T11:44:02.407216+00:00
+[2021-05-26 11:47:52,946] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Jordan_COVID19_dag', 'Scale_Jordan_Data', '2021-05-26T11:44:02.407216+00:00', '--job-id', '29', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/covid_dag.py', '--cfg-path', '/tmp/tmp609yyl2i', '--error-file', '/tmp/tmp08lx7v3n']
+[2021-05-26 11:47:52,948] {standard_task_runner.py:77} INFO - Job 29: Subtask Scale_Jordan_Data
+[2021-05-26 11:47:52,942] {standard_task_runner.py:52} INFO - Started process 67 to run task
+[2021-05-26 11:47:53,005] {logging_mixin.py:104} INFO - Running <TaskInstance: Jordan_COVID19_dag.Scale_Jordan_Data 2021-05-26T11:44:02.407216+00:00 [running]> on host eb9be2e0c736
+[2021-05-26 11:47:53,058] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=Jordan_COVID19_dag
+AIRFLOW_CTX_TASK_ID=Scale_Jordan_Data
+AIRFLOW_CTX_EXECUTION_DATE=2021-05-26T11:44:02.407216+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-05-26T11:44:02.407216+00:00
+[2021-05-26 11:47:53,946] {python.py:118} INFO - Done. Returned value was: None
+[2021-05-26 11:47:53,958] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=Jordan_COVID19_dag, task_id=Scale_Jordan_Data, execution_date=20210526T114402, start_date=20210526T114752, end_date=20210526T114753
+[2021-05-26 11:47:53,993] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-05-26 11:47:54,017] {local_task_job.py:146} INFO - Task exited with return code 0
